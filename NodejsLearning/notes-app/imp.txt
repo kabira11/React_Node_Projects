@@ -1,0 +1,5 @@
+npm init for package.json
+validator package -- This library validates and sanitizes strings only.
+chalk package --- Terminal string styling done right
+npm install nodemon@1.19.1 -g for installing nodemon globally
+npm i yargs --- Yargs helps you build interactive command line tools, by parsing arguments and generating an elegant user interface.

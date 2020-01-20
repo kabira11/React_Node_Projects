@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The kbd Element</h2>
+<p>The kbd element represents user input:</p>
+
+<button>click me</button>
+</body>
+<script>
+document.querySelector("button").addEventListener("click",function () {
+  var zip = new JSZip();
+  zip.file("hello.txt", "Hello World\n");
+  var messages = zip.folder("messages");
+  messages.file("message.txt","Hello World, This is message form wapgee!");
+  zip.generateAsync({type:"blob"})
+    .then(function(zip) {
+    saveAs(zip, "archive.zip");
+  });
+});
+</script>
+</html>
